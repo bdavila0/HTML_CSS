@@ -19,6 +19,13 @@ body {
     color: var(--light);
     background-color: #21232e;
 }
+h1 {
+    text-align: center;
+}
+p {
+    text-align: right;
+    margin: 0 25px 25px 0;
+}
 ul {
     list-style: none;
 }

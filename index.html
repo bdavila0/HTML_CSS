@@ -5,41 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios en HTML CSS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <h1>FORMS HTML & CSS</h1>
     <h2>Examples</h2>
-    
-    <div id="page" class="site">
-        <div class="options">
-            <ul>
-                <li>
-                    <input type="radio" name="option" id="design">
-                    <label for="design">
-                        <span class="circle"></span>
-                        <span class="fireworks"></span>
-                        <span class="text">Web Design</span>
-                    </label>
-                </li>
-                <li>
-                    <input type="radio" name="option" id="developer">
-                    <label for="developer">
-                        <span class="circle"></span>
-                        <span class="fireworks"></span>
-                        <span class="text">Developer</span>
-                    </label>
-                </li>
-                <li>
-                    <input type="radio" name="option" id="uiux">
-                    <label for="uiux">
-                        <span class="circle"></span>
-                        <span class="fireworks"></span>
-                        <span class="text">UI / UX</span>
-                    </label>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="box">
+            <div class="wrapper">
+                <div class="login_box">
+                  <div class="login-header">
+                    <span>Login</span>
+                  </div>
+              
+                  <div class="input_box">
+                    <input type="text" id="user" class="input-field" required>
+                    <label for="user" class="label">Username</label>
+                    <i class="bx bx-user icon"></i>
+                  </div>
+              
+                  <div class="input_box">
+                    <input type="password" id="pass" class="input-field" required>
+                    <label for="pass" class="label">Password</label>
+                    <i class="bx bx-lock-alt icon"></i>
+                  </div>
+              
+                  <div class="remember-forgot">
+                    <div class="remember-me">
+                      <input type="checkbox" id="remember">
+                      <label for="remember">Remember me</label>
+                    </div>
+              
+                    <div class="forgot">
+                      <a href="#">Forgot password?</a>
+                    </div>
+                  </div>
+              
+                  <div class="input_box">
+                    <input type="submit" class="input-submit" value="Login">
+                  </div>
+              
+                  <div class="register">
+                    <span>Don't have an account? <a href="#">Register</a></span>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="box">
+            <div id="page" class="site">
+                <div class="login_box">
+                    <div class="options">
+                        <ul>
+                            <li>
+                                <input type="radio" name="option" id="design">
+                                <label for="design">
+                                    <span class="circle"></span>
+                                    <span class="fireworks"></span>
+                                    <span class="text">Web Design</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="option" id="developer">
+                                <label for="developer">
+                                    <span class="circle"></span>
+                                    <span class="fireworks"></span>
+                                    <span class="text">Developer</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="option" id="uiux">
+                                <label for="uiux">
+                                    <span class="circle"></span>
+                                    <span class="fireworks"></span>
+                                    <span class="text">UI / UX</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
     <p>© 2023 Braulio Dávila. | Todos los derechos reservados</p>
 </body>
 </html>
